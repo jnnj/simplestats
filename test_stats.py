@@ -3,6 +3,9 @@ from nose.tools import assert_equal, assert_almost_equal, assert_true, \
 
 from stats import mean, mode, std, var#, median
 
+def test_median():
+    assert( median([4,5,6]) == 5)
+
 def test_mean1():
     obs = mean([0, 0, 0, 0])
     exp = 0
